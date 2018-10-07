@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img src="" alt="1">
+    <br><br>
+    <br><br>
+    <img src="" alt="2">
+    <br><br>
+    <br><br>
+    <img src="" alt="3">
+    <br><br>
+    <br><br>
+    <img src="" alt="4">
+    <br><br>
+    <br><br>
+    <img src="" alt="5">
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            // var a = [];
+            
+
+            // function arrayImg(im) {
+
+
+            //     for (i = 0; i < im.length; ++i) {
+
+            //         a.push(im[i].innerHTML);
+
+            //     }
+
+
+            // }
+
+            // arrayImg($('img').get());
+
+            // console.log(a[2])
+
+
+            let img_map = $("img").map(function () {
+                return $(this).attr("src");
+            });
+            img_map.splice(0,5," imagen 1", 'imagen 2','imagen 3','imagen 4','imagen 5');
+
+            console.log(img_map)
+        for (i in img_map){
+            if(typeof console === object){
+
+
+            }
+
+                }
+
+
+
+        });
+
+
+    </script>
+    <!-- <script>
+
+
+
+
+        $(document).ready(function(){
+
+            let links = ['www.sarasa.com','www.pepo.com','www.cacho.com']
+
+            $('a').text(links)
+
+            for (i = 0; i < links.length ; ++i){
+                for(I = 0 ; I< $('a').length; ++I){
+
+             if ($('a').length===links[i]){
+
+                $('a').text(links[i]);
+
+
+
+             
+
+
+
+             }}
+
+                console.log(links[i]);
+
+            }
+            
+            
+            // $('a').text(links[0]);
+            // $('a').attr('href',links[0]);
+
+           
+        });
+    
+    
+    
+    
+    </script>  -->
+    <!-- 
+    <script>
+         $(document).ready(function(){
+    let links = ['www.sarasa.com','www.pepo.com','www.cacho.com']
+    
+    console.log($('a').length();
+    
+    links.forEach(function(elemento){
+
+               
+
+    });
+    
+    
+});
+    </script> -->
+</body>
+
+</html>|
